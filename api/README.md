@@ -1,3 +1,8 @@
+# testing react - adrian 6/23/17
+
+# unit, integration , end2end testing practices.
+
+
 # ![Node/Express/Mongoose Example App](project-logo.png)
 
 > Example Node (Express+Mongoose) codebase that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) API spec.
