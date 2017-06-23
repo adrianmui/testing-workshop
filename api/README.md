@@ -2,6 +2,8 @@
 
 ### unit, integration , end2end testing practices.
 
+### unit testing with jest.
+
 the code I've written is in client/, api/, and cypress/, the solutions are given in the *-final/ folders.
 
 # ![Node/Express/Mongoose Example App](project-logo.png)
