@@ -1,7 +1,8 @@
-# testing react - adrian 6/23/17
+## testing react - adrian 6/23/17
 
-# unit, integration , end2end testing practices.
+### unit, integration , end2end testing practices.
 
+the code I've written is in client/, api/, and cypress/, the solutions are given in the *-final/ folders.
 
 # ![Node/Express/Mongoose Example App](project-logo.png)
 
