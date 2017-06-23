@@ -19,6 +19,33 @@
 // it up if needed. Then continue the cycle until you cover all use cases.
 import arrayify from '../arrayify'
 
+test('expects default to output empty array', () => {
+  const result = arrayify()
+  expect(result).toEqual(expect.arrayContaining([]))
+})
+
+test('expects single string to output single array', () => {
+  const result = arrayify('something')
+  expect(result).toEqual(expect.arrayContaining(['something']))
+})
+
+test('expects single number to output single array', () => {
+  const result = arrayify(123)
+  expect(result).toEqual(expect.arrayContaining([123]))
+})
+
+test('expects strings and numbers to output single array', () => {
+  const result = arrayify(123, 'first', 456, 'second', 567)
+  expect(result).toEqual(expect.arrayContaining(
+    [123, 'first', 456, 'second', 567]))
+})
+
+test('expects array to output same array', () => {
+  const result = arrayify(123, 'first', 456, 'second', 567)
+  expect(result).toEqual(expect.arrayContaining(
+    [123, 'first', 456, 'second', 567]))
+})
+
 
 //////// Elaboration & Feedback /////////
 // When you've finished with the exercises:
