@@ -46,6 +46,11 @@ test('expects array to output same array', () => {
     [123, 'first', 456, 'second', 567]))
 })
 
+test('expects combination of array, strings, and numbers to output joined array', () => {
+  const result = arrayify([123, 'first'], 456, 'second', [567], 'third')
+  expect(result).toEqual(expect.arrayContaining(
+    [123, 'first', 456, 'second', 567, 'third']))
+})
 
 //////// Elaboration & Feedback /////////
 // When you've finished with the exercises:
