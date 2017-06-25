@@ -1,9 +1,6 @@
 export default getAge
 
 function getAge(person) {
-  if (person.age) {
-    return person.age
-  }
-  return null
+  return (person.age !== undefined) ? person.age : null
 }
 

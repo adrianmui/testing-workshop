@@ -2,15 +2,15 @@ export default getAge
 
 // WORKSHOP_START
 function getAge(person) {
-  if (person.age) {
+  if (typeof person.age !== undefined) {
     return person.age
   }
-  return null
+  return 0
 }
 // WORKSHOP_END
 
 // FINAL_START
 function getAge({age = null}) {
-  return age
+  return age || 0
 }
 // FINAL_END

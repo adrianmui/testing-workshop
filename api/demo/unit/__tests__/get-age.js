@@ -11,5 +11,10 @@ test(`can get a person's age`, () => {
   const person = {age}
   const result = getAge(person)
   expect(result).toBe(age)
-})
+}) 
 
+test(`returns 0 if person's age does not exist`, () => {
+  const person = {age: 0}
+  const result = getAge(person)
+  expect(result).toBe(0)
+})
