@@ -22,7 +22,7 @@ test('can get users', () => {
   })
 })
 
-test('can get 2 users offset 3', () => {
+test.skip('can get 2 users offset 3', () => {
   const usersProm = axios.get(`http://localhost:3001/api/users?limit=5`)
     .then(res => res.data.users)
   const twoUsersProm = axios.get(`http://localhost:3001/api/users?limit=2?offset=3`)

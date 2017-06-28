@@ -36,6 +36,11 @@ const api = axios.create({
 // stuff
 const getUser = res => res.data.user
 
+test(`can get articles`, () => {
+  api.get('articles?limit=4')
+  .then(res => expect(res.data.articles.length).toBe(4))
+})
+
 //////////////////////
 // 👋 Put your tests here
 ///////////////////////
