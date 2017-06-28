@@ -80,6 +80,7 @@ function getUserSchema() {
     return {
       username: this.username,
       bio: this.bio,
+      image: this.image,
       // this is where the bug is...
       // we're not adding this.image
       // to the object!

@@ -12,7 +12,12 @@ import {getUserConstructor, generateUser} from './helpers/utils'
 // NOTE: If the user doesn't have an image, that's
 // totally fine (the client will handle the default)
 // so don't worry about checking that case.
-
+test('can generate user with image', () => {
+  const image = `http://orig00.deviantart.net/e863/f/2014/194/6/b/pokemon__shiny_mew_skype_avatar_by_mikedarko-d79ldgd.png`
+  const user = generateUser({image})
+  const result = user.toProfileJSONFor()
+  expect(result.image).toBeDefined()
+})
 
 //////// Elaboration & Feedback /////////
 // When you've finished with the exercises:
